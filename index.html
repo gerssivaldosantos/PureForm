@@ -4,23 +4,24 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="index.css">
         <title>Cadastro</title>
     </head>
     <body>
         <div>
-            <h1>Cadastre suas informações para receber o conteúdo</h1>
-            <h4>Gerssivaldo Santos</h4>
+            <h1 id="title">Receber contéudo</h1>
+            <h4 id="subtitle">Cadastre-se para receber o material</h4>
         </div>
 
         <form>
             <!-- This tag create a line wrappe in elements -->
-            <fieldset>
-                <div>
+            <fieldset id="fieldset1">
+                <div id="input-name">
                     <label>Nome</label>
                     <input
-                        name="nome"
-                        id="nome"
-                        placeholder="Digite seu nome"
+                        name="name"
+                        id="name"
+                        placeholder="Digite seu name"
                         type="text"
                     />
                 </div>
@@ -29,17 +30,17 @@
                     <label>Sobrenome</label>
                     <input
                         type="text"
-                        name="sobrenome"
-                        id="sobrenome"
-                        placeholder="Digite seu sobrenome"
+                        name="longname"
+                        id="longname"
+                        placeholder="Digite seu Sobrenome"
                     />
                 </div>
                 <div>
                     <label>Apelido</label>
                     <input
                         type="text"
-                        name="apelido"
-                        id="apelido"
+                        name="nickname"
+                        id="nickname"
                         placeholder="Como posso chamá-lo?"
                     />
                 </div>
