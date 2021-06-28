@@ -15,9 +15,9 @@
 
         <form>
             <!-- This tag create a line wrappe in elements -->
-            <fieldset id="fieldset1">
-                <div id="input-name">
-                    <label>Nome</label>
+            <fieldset class="group">
+                <div class="camp">
+                    <label><strong>Nome</strong></label>
                     <input
                         name="name"
                         id="name"
@@ -26,8 +26,8 @@
                     />
                 </div>
 
-                <div>
-                    <label>Sobrenome</label>
+                <div class="camp">
+                    <label><strong>Sobrenome</strong></label>
                     <input
                         type="text"
                         name="longname"
@@ -35,8 +35,8 @@
                         placeholder="Digite seu Sobrenome"
                     />
                 </div>
-                <div>
-                    <label>Apelido</label>
+                <div class="camp">
+                    <label><strong>Apelido</strong></label>
                     <input
                         type="text"
                         name="nickname"
@@ -46,8 +46,8 @@
                 </div>
             </fieldset>
 
-            <div>
-                <label>Email</label>
+            <div class="camp">
+                <label><strong>Email</strong></label>
                 <input
                     type="text"
                     name="email"
@@ -56,8 +56,8 @@
                 />
             </div>
 
-            <div>
-                <label>Senioridade</label>
+            <div class="camp">
+                <label><strong>Senioridade</strong></label>
                 <select id="senionaridade">
                     <option value="" selected disabled>Selecione</option>
                     <option>Iniciante</option>
@@ -66,7 +66,7 @@
                 </select>
             </div>
 
-            <div>
+            <div class="camp">
                 <label>Qual seu objetivo ?</label>
                 <label>
                     <br>
@@ -86,7 +86,7 @@
                 </label>
             </div>
             <fieldset>
-                <div>
+                <div class="camp">
                     <label>Quais tecnologias você já teve contato ?</label><br>
                     <input
                         type="checkbox"
@@ -119,12 +119,11 @@
                     <label for="python">Python</label>
                 </div>
             </fieldset>
-            <div>
-                <br>
+            <div class="camp">
                 <label>Como você se interessou por programação ?</label><br>
                 <textarea  id="experiencia" rows="4" name="experiencia"></textarea>
             </div>
-            <button type="submit">Receber</button>
+            <button class="button" type="submit">Receber</button>
         </form>
     </body>
 </html>
