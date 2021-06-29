@@ -1,82 +1,75 @@
-* {
+*{
     margin: 0;
-    padding: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
     
 }
 
-#title {
-    color: rgb(0, 4, 58);
-    font-family: sans-serif;
-    margin-left: 7%;
+
+body{
+    background: linear-gradient(0deg, #3e6e66, #bcfdf2);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    color:rgba(22, 22, 22, 0.849);
 }
 
-#subtitle {
-    color: rgb(36, 35, 102);
-    font-family: sans-serif;
-    margin-left: 10%;
+#title{
+    margin-bottom: -5px;
+
 }
 
-#check {
-    display: inline-block;
+#subtitle{
+    margin-bottom: 15px;
+}
+
+
+form{
+    margin-bottom: 150px;
 }
 
 fieldset {
     border: 0;
+    
 }
 
-body {
-    background-color: rgb(221, 245, 255);
-    justify-content: center;
-    color: rgb(36, 36, 36);
-    font-size: 1em;
-    font-family: "Times New Roman", Times, serif;
-    align-items: center;
-    margin-top: 2%;
-    margin-left: 25%;
-}
-
-input,
-select,
-textarea,
-button {
-    font-family: sans-serif;
-    font-size: 1em;
-    color: rgb(63, 63, 63);
+input, select, textarea, button  {
     border-radius: 6px;
-
+    padding: 4px;
+   font-size: 1em;
 }
 
-.group:before,
-.group::after {
+.group:before, .group:after {
     display: table;
 }
 
-.group:after {
+.group::after{
     clear: both;
 }
 
-.campo {
+.camp{
+    margin-bottom: 0.5em;
+    align-items: center;
+    display: grid;
+    
+}
+
+.check{
     margin-bottom: 1em;
 }
 
-.campo label {
+.camp label {
     margin-bottom: 0.2em;
-    color: #c5c5c5;
-    display: block;
 }
 
-fieldset.group .camp {
-    float: left;
-    margin-right: 1em;
-}
-
-.camp input[type="text"],
-.camp input[type="email"],
-.camp select,
-.camp textarea {
-    padding:0.2em;
-    border: 1px solid #000131;
-    box-shadow: 2px 2px 2px rgb(0,0,0,0.2);
+.camp input[type="text"], .camp input[type="email"], .camp select, .camp textarea {
+    padding: 0.2em;
+    border: 1px solid #346e4e;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     display: block;
 }
 
@@ -84,7 +77,20 @@ fieldset.group .camp {
     padding-right: 1em;
 }
 
-.camp input:focus .camp select:focus, .camp textarea:focus{
-    background: #f6f6ff;
+.camp input:focus, .camp select:focus, .camp textarea:focus {
+    background: #f0fffe;
+}
+
+.button {
+    font-size: 1.2em;
+    background: #293f23;
+    border: 0;
+
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    float: right;
+  
 
 }
